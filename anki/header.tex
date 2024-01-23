@@ -1,0 +1,17 @@
+\documentclass[10pt]{article}
+\pagestyle{empty}
+\usepackage[paperwidth=16cm,paperheight=16cm,margin=1cm,marginparsep=0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx} 
+\graphicspath{ {zp/} }
+\let\oldincludegraphics\includegraphics
+\renewcommand*{\includegraphics}[2][]{\oldincludegraphics[#1,max width=9cm]{#2}}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{hyperref}
+\setlength{\parindent}{0cm}
+\begin{document}
