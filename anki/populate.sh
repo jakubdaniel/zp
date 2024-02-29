@@ -39,6 +39,14 @@ function append() {
 }
 ' zp.org
 
+for i in $(sed -n 's/^\*\* \(.*\)$/\1/p' zp.org | sort -n); do
+  echo "$i,$i.question.pdf,$i.answer.pdf,$(cat parts/$i.answer)"
+done > deck/deck.pdf.csv
+
+for i in $(sed -n 's/^\*\* \(.*\)$/\1/p' zp.org | sort -n); do
+  echo "$i,<img src=\"$i.question.svg\" />,<img src=\"$i.answer.svg\" />,$(cat parts/$i.answer)"
+done > deck/deck.svg.csv
+
 (
   sed '/geometry/s/paper\(width\|height\)=[^,]*,//g' header.tex
   echo '\begin{enumerate}'
@@ -82,16 +90,10 @@ for i in $(sed -n 's/^\*\* \(.*\)$/\1/p' zp.org | sort -n); do
   ) > tmp/$i.log 2>&1
 done
 
-for i in $(sed -n 's/^\*\* \(.*\)$/\1/p' zp.org | sort -n); do
-  echo "$i,deck/$i.question.pdf,deck/$i.answer.pdf"
-done > deck/deck.pdf.csv
-
-for i in $(sed -n 's/^\*\* \(.*\)$/\1/p' zp.org | sort -n); do
-  echo "$i,deck/$i.question.svg,deck/$i.answer.svg,$(cat parts/$i.answer)"
-done > deck/deck.svg.csv
-
 (
   cd deck/
   ls | grep '\.\(question\|answer\)\.pdf$' | sort -t. -k1n -k2r | xargs | xargs -I{} echo pdfunite {}    deck.pdf | bash
   ls | grep           '\.\(answer\)\.pdf$' | sort -t. -k1n -k2r | xargs | xargs -I{} echo pdfunite {} answers.pdf | bash
 )
+
+cp deck/*.{pdf,svg} ~/.local/share/Anki2/User*/collection.media/

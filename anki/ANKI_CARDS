@@ -1,0 +1,12 @@
+fields:
+- Index
+- Question
+- Answer
+- Prompt
+
+front:
+{{Question}}
+{{type:Prompt}}
+
+back:
+{{Answer}}
