@@ -77,15 +77,21 @@ for i in $(sed -n 's/^\*\* \(.*\)$/\1/p' zp.org | sort -n); do
       latex --halt-on-error --output-format=dvi --output-directory=tmp --jobname=$i.$f --src-specials --shell-escape $extra'\def\index{'$i'}\input{note}'
       dvips -z tmp/$i.$f.dvi -o tmp/$i.$f.ps
       ps2pdf   tmp/$i.$f.ps     deck/$i.$f.pdf
+      pdftocairo -svg deck/$i.$f.pdf deck/$i.$f.svg
     done
   ) > tmp/$i.log 2>&1
 done
 
 for i in $(sed -n 's/^\*\* \(.*\)$/\1/p' zp.org | sort -n); do
   echo "$i,deck/$i.question.pdf,deck/$i.answer.pdf"
-done > deck/deck.csv
+done > deck/deck.pdf.csv
+
+for i in $(sed -n 's/^\*\* \(.*\)$/\1/p' zp.org | sort -n); do
+  echo "$i,deck/$i.question.svg,deck/$i.answer.svg,$(cat parts/$i.answer)"
+done > deck/deck.svg.csv
 
 (
   cd deck/
-  ls | grep '\.\(question\|answer\)\.pdf$' | sort -t. -k1n -k2r | xargs | xargs -I{} echo pdfunite {} deck.pdf | bash
+  ls | grep '\.\(question\|answer\)\.pdf$' | sort -t. -k1n -k2r | xargs | xargs -I{} echo pdfunite {}    deck.pdf | bash
+  ls | grep           '\.\(answer\)\.pdf$' | sort -t. -k1n -k2r | xargs | xargs -I{} echo pdfunite {} answers.pdf | bash
 )
