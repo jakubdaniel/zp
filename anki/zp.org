@@ -5539,7 +5539,7 @@ Funkční cyklus opakovací brokovnice ovládané posuvným předpažbím je obv
 *** A
 manuálním ovládání posuvného předpažbí, kterým se ovládá závěrový a nabíjecí mechanismus zbraně. Při posunu předpažbí směrem vzad dochází standardně také k natažení bicího mechanismu.
 *** B
-manuálním ovládání posuvného předpažbí, kterým se ovládá závěrový a spoušťový mechanismus zbraně. Při posunu předpažbí směrem vpřed dochází standardně takék vypuštění napnutého bicího mechanismu.
+manuálním ovládání posuvného předpažbí, kterým se ovládá závěrový a spoušťový mechanismus zbraně. Při posunu předpažbí směrem vpřed dochází standardně také k vypuštění napnutého bicího mechanismu.
 *** C
 impulzu zpětného rázu při výstřelu. Před prvním výstřelem dochází k nabití zbraně pohybem posuvného předpažbí; následně je již funkce zbraně zajišťována automatikou zbraně.
 *** Answer
