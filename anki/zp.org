@@ -2172,7 +2172,7 @@ https://www.e-sbirka.cz/sb/2002/119/2022-02-01#par_28-odst_2-pism_b
 *** Question
 Držitel zbrojního průkazu skupiny D je podle zákona o zbraních mimo jiné oprávněn při výkonu zaměstnání nebo povolání
 *** A
-nosit zbraň kategorie B nebo C, nikoliv všakk zbraň kategorie A nebo A-I, na kterou má jeho zaměstnavatel vydán průkaz zbraně k účelům, pro které byla vydána zbrojní licence, přičemž zbraň s nasazeným nebo jinak instalovaným tlumičem hluku výstřelu nemůže nosit ani střelnici. K této zbrani je oprávněn držet střelivo.
+nosit zbraň kategorie B nebo C, nikoliv však zbraň kategorie A nebo A-I, na kterou má jeho zaměstnavatel vydán průkaz zbraně k účelům, pro které byla vydána zbrojní licence, přičemž zbraň s nasazeným nebo jinak instalovaným tlumičem hluku výstřelu nemůže nosit ani střelnici. K této zbrani je oprávněn držet střelivo.
 *** B
 nosit zbraň kategorie B, D a E, na kterou má jeho zaměstnavatel vydán průkaz zbraně k účelům, pro které byla vydána zbrojní licence, přičemž zbraň s nasazeným nebo jinak instalovaným tlumičem hluku výstřelu může nosit pouze na střelnici. K této zbrani je oprávněn nosit střelivo.
 *** C
@@ -6608,7 +6608,7 @@ tlakovým obvazem.
 *** B
 pomocí škrtidla.
 *** C
-lakem prstu přímo v ráně.
+tlakem prstu přímo v ráně.
 *** Answer
 C
 *** References
