@@ -3653,7 +3653,7 @@ https://www.e-sbirka.cz/sb/2002/119/2022-02-01#par_69-odst_1
 *** Question
 Technické požadavky na zabezpečení a podmínky pro skladování, přechovávání a zacházení s černým loveckým prachem, bezdýmným prachem a zápalkami stanoví
 *** A
-prováděcí právní předpis. Stanoví rovněž prostory, ve kterých se černý lovecký prach bezdýmný prach a zápalky skladovat nesmí.
+prováděcí právní předpis. Stanoví rovněž prostory, ve kterých se černý lovecký prach, bezdýmný prach a zápalky skladovat nesmí.
 *** B
 svým rozhodnutím příslušný útvar policie po dohodě s Českým báňským úřadem. Příslušný útvar policie stanoví rovněž prostory, ve kterých se černý lovecký prach, bezdýmný prach a zápalky skladovat nesmí.
 *** C
@@ -5089,7 +5089,7 @@ B
 *** Media
 362
 *** Question
-Porovnejte vyobrazené vzorky a vyberte střelivo typu Flobert. Jedná o vzorek nacházející se
+Porovnejte vyobrazené vzorky a vyberte střelivo typu Flobert. Jedná se o vzorek nacházející se
 *** A
 vlevo na začátku řady.
 *** B
@@ -5103,7 +5103,7 @@ C
 *** Media
 363
 *** Question
-Porovnejte vyobrazené vzorky a vyberte střelivo ráže 45 AUTO původně určené pro samonabíjecí pistoli Colt typu M1911. Jedná o vzorek nacházející se
+Porovnejte vyobrazené vzorky a vyberte střelivo ráže 45 AUTO původně určené pro samonabíjecí pistoli Colt typu M1911. Jedná se o vzorek nacházející se
 *** A
 vlevo na začátku řady.
 *** B
